@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+  </head>
+
+  <body>
+    <h1>Contact Us</h1>
+    <form enctype="multipart/form-data" method="POST" action="form-processing.html">
+      <!-- contact purpose -->
+      <div class="control-group">
+        <label for="purpose">Purpose</label>
+        <select id="purpose" name="purpose">
+          <option value="biz">Business</option>
+          <option value="per">Personal</option>
+        </select>
+      </div>
+
+      <!-- full name -->
+      <div class="control-group">
+        <label for="full_name">Name</label>
+        <input name="full_name" id="full_name" type="text">
+      </div>
+
+      <!-- email address -->
+      <div class="control-group">
+        <label for="email">Email</label>
+        <input name="email" id="email" type="email">
+      </div>
+
+      <!-- phone number -->
+      <div class="control-group">
+        <label for="phone">Phone</label>
+        <input name="phone" id="phone" type="tel">
+      </div>
+
+      <!-- preferred contact method -->
+      <div class="control-group">
+        <label>Preferred Contact Method</label>
+        <label for="contact_email">Email</label>
+        <input type="radio" value="1" name="contact_method" id="contact_email">
+        <label for="contact_phone">Phone</label>
+        <input type="radio" value="2" name="contact_method" id="contact_phone">
+      </div>
+
+      <!-- day(s) to contact -->
+      <div class="control-group">
+        <label>Contact Day(s)</label>
+        <label for="contact_day_mon">Monday</label>
+        <input type="checkbox" value="Mon" name="contact_day[]" id="contact_day_mon">
+        <label for="contact_day_tue">Tuesday</label>
+        <input type="checkbox" value="Tue" name="contact_day[]" id="contact_day_tue">
+        <label for="contact_day_wed">Wednesday</label>
+        <input type="checkbox" value="Wed" name="contact_day[]" id="contact_day_wed">
+        <label for="contact_day_thu">Thursday</label>
+        <input type="checkbox" value="Thu" name="contact_day[]" id="contact_day_thu">
+        <label for="contact_day_fri">Friday</label>
+        <input type="checkbox" value="Fri" name="contact_day[]" id="contact_day_fri">
+        <label for="contact_day_sat">Saturday</label>
+        <input type="checkbox" value="Sat" name="contact_day[]" id="contact_day_sat">
+        <label for="contact_day_sun">Sunday</label>
+        <input type="checkbox" value="Sun" name="contact_day[]" id="contact_day_sun">
+      </div>
+
+      <!-- attachment -->
+      <div class="control-group">
+        <label for="attachment">Attachment</label>
+        <input name="attachment" id="attachment" type="file">
+      </div>
+
+      <!-- long message -->
+      <div class="control-group">
+        <label for="message">Message</label>
+        <textarea cols="20" rows="10" name="message" id="message"></textarea>
+      </div>
+
+      <div class="control-group">
+        <input type="submit" value="Send">
+        <input type="reset" value="Clear">
+      </div>
+    </form>
+  </body>
+</html>
