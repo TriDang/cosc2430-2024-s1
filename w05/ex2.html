@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Password Verification</title>
+    <style>
+      div {
+        margin: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <div>
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password">
+      </div>
+      <div>
+        <label for="retype_password">Retype password</label>
+        <input id="retype_password" type="password" name="retype_password">
+      </div>
+      <div>
+        <input type="button" value="Verify">
+      </div>
+    </form>
+    <p id="verification_status"></p>
+  </body>
+</html>
