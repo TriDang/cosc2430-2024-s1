@@ -1,0 +1,31 @@
+ol li {
+  color: green;
+}
+
+ol li:first-child {
+  color: red;
+}
+
+ol li:last-child {
+  color: blue;
+}
+
+p::first-line {
+  background-color: lightblue;
+}
+
+/*
+A similar selector (for this particular document only)
+p + p::first-line
+*/
+p:first-of-type::first-line {
+  background-color: pink;
+}
+
+p::selection {
+  background-color: yellow;
+}
+
+input[required] {
+  background-color: brown;
+}

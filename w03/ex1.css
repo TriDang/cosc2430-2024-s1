@@ -1,0 +1,62 @@
+h1 {
+  color: hsl(0, 95%, 50%);
+  font-size: 36pt;
+}
+
+h2 {
+  color: hsl(0, 75%, 50%);
+  font-size: 32pt;
+}
+
+h3 {
+  color: hsl(0, 55%, 50%);
+  font-size: 28pt;
+}
+
+h4 {
+  color: hsl(0, 35%, 50%);
+  font-size: 24pt;
+}
+
+nav li a {
+  text-decoration: none;
+  color: green;
+}
+
+nav li.active a {
+  color: orange;
+}
+
+nav li:hover {
+  background-color: beige;
+}
+
+p {
+  font-family: monospace;
+}
+
+div.job-description p {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+/*
+A similar selector
+#education table tr:nth-child(even)
+*/
+#education table tr:nth-child(2n) {
+  background-color: pink;
+}
+
+/*
+A similar selector
+#education table tr:nth-child(odd)
+*/
+#education table tr:nth-child(2n + 1) {
+  background-color: cyan;
+}
+
+#education table tr:first-child {
+  background-color: white;
+  font-size: x-large;
+}
