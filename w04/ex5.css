@@ -1,0 +1,41 @@
+header {
+  background-color: tan;
+}
+footer {
+  background-color: turquoise;
+}
+main {
+  background-color: white;
+}
+main div {
+  background-color: #ddd;
+  text-align: center;
+  margin: 10px 0;
+  border: 3px skyblue solid;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    display: flex;          
+  }
+  #col12 {
+    width: 50%;
+  }
+  #col3 {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #col12 {
+    width: 67%;
+    display: flex;
+  }
+  #col12 div {
+    width: 50%;
+  }
+  #col3 {
+    width: 33%;
+  }
+}

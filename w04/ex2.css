@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: red;
+  text-align: center;
+  line-height: 40px;
+}
+
+#main {
+  display: flex;
+}
+
+#left {
+  width: 30%;
+  min-width: 200px;
+  background-color: aqua;
+}
+
+main {
+  flex-grow: 1;
+}
+
+#right {
+  width: 15%;
+  background-color: coral;
+}
+
+footer {
+  width: 100%;
+  margin-top: 20px;
+  background-color: blueviolet;
+  text-align: center;
+  line-height: 40px;
+}
