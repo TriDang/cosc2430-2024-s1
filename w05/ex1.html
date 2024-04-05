@@ -9,6 +9,7 @@
         margin: 10px;
       }
     </style>
+    <script src="ex1.js"></script>
   </head>
 
   <body>
@@ -22,10 +23,10 @@
       <input id="result" readonly type="number">
     </div>
     <div>
-      <input type="button" value=" + ">
-      <input type="button" value=" - ">
-      <input type="button" value=" * ">
-      <input type="button" value=" / ">
+      <input type="button" value=" + " onclick="apply(this.value);">
+      <input type="button" value=" - " onclick="apply(this.value);">
+      <input type="button" value=" * " onclick="apply(this.value);">
+      <input type="button" value=" / " onclick="apply(this.value);">
     </div>
   </body>
 </html>

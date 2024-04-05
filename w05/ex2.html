@@ -8,23 +8,29 @@
       div {
         margin: 10px;
       }
+      .success {
+        color: green;
+      }
+      .failed {
+        color: red;
+      }
     </style>
+    <script src="ex2.js"></script>
   </head>
-
   <body>
     <form>
       <div>
         <label for="password">Password</label>
-        <input id="password" type="password" name="password">
+        <input id="password" type="text" name="password">
       </div>
       <div>
         <label for="retype_password">Retype password</label>
         <input id="retype_password" type="password" name="retype_password">
       </div>
       <div>
-        <input type="button" value="Verify">
+        <input type="button" value="Verify" onclick="validate()">
       </div>
     </form>
-    <p id="verification_status"></p>
+    <p id="verification_status">Validation Result</p>
   </body>
 </html>
