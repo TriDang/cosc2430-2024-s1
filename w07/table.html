@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Order</title>
+    <script src="table.js" defer></script>
+  </head>
+  <body>
+    <h1>Order</h1>
+    <table id="order_table">
+      <tr>
+        <th>Product Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Amount</th>
+      </tr>
+    </table>
+    <div>
+      <div>
+        <label for="product_name">Product Name</label>
+        <input id="product_name" type="text">
+      </div>
+      <div>
+        <label for="price">Price</label>
+        <input id="price" type="text">
+      </div>
+      <div>
+        <label for="quantity">Quantity</label>
+        <input id="quantity" type="text">
+      </div>
+      <div>
+        <input type="button" id="add" value="Add">
+        <span id="notification" style="background-color: cornflowerblue; color: red; display: none;">New order entry added successfully</span>
+      </div>
+    </div>
+  </body>
+</html>
