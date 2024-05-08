@@ -1,0 +1,14 @@
+<%- include('header.html') %>
+
+
+<ul>
+<% products.forEach((p) => { %>
+  <li><a href="product/<%= p.id %>"><%= p.name %></a> - $<%= p.price %></li>
+<% }) %>
+</ul>
+
+<form method="get">
+  <input type="text" name="q"><input type="submit" name="act" value="Search">
+</form>
+
+<%- include('footer.html') %>
