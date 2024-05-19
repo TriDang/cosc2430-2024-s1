@@ -81,7 +81,9 @@ app.post("/login", (req, res) => {
   const password = req.body.password;
   if (password == "COSC2430") {
     req.session.username = username;
-    res.redirect("/account");
+    req.session.save(err => {
+      res.redirect("/account");
+    });
   } else {
     res.redirect("/login");
   }
