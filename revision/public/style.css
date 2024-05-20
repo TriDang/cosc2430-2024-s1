@@ -1,0 +1,27 @@
+.error {
+  background-color: red;
+}
+
+.valid {
+  background-color: green;
+}
+
+.normal {
+  background-color: white;
+}
+
+form div {
+  margin-top: 10px;
+}
+
+form div label {
+  display: block;
+}
+
+table, tr, th, td {
+  border: solid black 1px;
+}
+
+table th, table td {
+  padding: 5px;;
+}

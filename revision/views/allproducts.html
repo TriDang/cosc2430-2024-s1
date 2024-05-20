@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <script src="/script.js" defer></script>
+    <title>All Products</title>
+  </head>
+
+  <body>
+    <h1>All Products</h1>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Description</th>
+      </tr>
+      <% products.forEach((p) => { %>
+        <tr>
+          <td><a href="/delete/<%= p.id %>"><%= p.id %><a></td>
+          <td><%= p.name %></td>
+          <td><%= p.price %></td>
+          <td><%= p.description %></td>
+        </tr>
+      <% }); %>
+    </table>
+  </body>
+</html>
